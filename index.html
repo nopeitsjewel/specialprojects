@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifetime Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This survey is intended for <b><em>ERICA NICOLE SALDON</em></b> only💖</p>
+    <fieldset>
+        <legend>Your Relationship Information</legend>
+        <form id="survey-form" action="thanks.html" method="post" onsubmit="return validateForm()">
+            <label id="status">Are you in a relationship? <br>
+                <input type="radio" name="status" value="status" required> Yes <br>
+                <input type="radio" name="status" value="status"> Of course </label>
+            <label id="name-label">Name:
+                <input id="name" name="name" type="text" placeholder="Full Name" class="inline" required></label>
+            <label id="girlfriend-label">Name of your Girlfriend:
+                <input id="girlfriend" name="girlfriend" type="text" placeholder="Your Girlfriend's Name" class="inline" required></label>
+            <label id="date-label">Anniversary Date:
+                <input type="date" id="date" value="date" name="date" required></label>
+            <label id="years">How long have you been dating your pretty girlfriend?
+                <input type="text" id="dating" placeholder="How looooong?" required></label>
+            <label id="first-meet">Where did you first meet her?
+                <input type="text" name="first-meet" id="first-meet" placeholder="Whereeeeee?" required></label>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>How well do you know your Girlfriend?</legend>
+        <p>(mag tagalog na nga lang ako at pagod na ako magpanggap sa english na yan)</p>
+        <label id="favorite-color">Favorite color:
+            <input id="favorite-color" name="favorite-color" type="text" placeholder="Madami yun pero isipin mo yung PINAKA" required></label>
+        <label id="pet-name">Current pet name:
+            <input type="text" name="pet-name" placeholder="Ikaw pa nagpangalan sa kanya" required></label>
+        <label id="shirt">Favorite t-shirt color ko:
+            <input type="text" name="shirt" placeholder="Yung pambahay lang ha" required></label>
+        <label id="shirt">Favorite sabaw:
+            <input type="text" name="sabaw" placeholder="Yari ka mahirap yan HAHAHA" required></label>
+        <label id="essay">What do you want to say to your girlfriend? Describe her. Anong mga gusto mo sakin? Anong ayaw mo sakin or sa mga ginagawa ko? Basta lahat ng gusto mo sabihin. Gusto ko kikiligin ako ha🤨<br>
+            <textarea placeholder="Ayaw ko maikli. Gusto ko habaan mo. 1 sentence=😘1kiss" required></textarea>
+        </label>
+    </fieldset>
+    <input type="submit" value="Submit Yourself to Your Girlfriend"> 
+</body>
+</html>
